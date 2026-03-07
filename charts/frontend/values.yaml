@@ -1,6 +1,6 @@
 image:
   repository: my-react-app
-  tag: v1
+  tag: v2
   pullPolicy: Never
 
 replicaCount: 1
