@@ -1,0 +1,4 @@
+apiVersion: v2
+name: backend
+description: ASP.NET Core Web API
+version: 1.0.0

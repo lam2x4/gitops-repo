@@ -1,0 +1,12 @@
+image:
+  repository: my-react-app
+  tag: v1
+  pullPolicy: Never
+
+replicaCount: 1
+
+service:
+  port: 80
+
+ingress:
+  host: app.local

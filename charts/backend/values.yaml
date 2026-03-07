@@ -1,0 +1,12 @@
+image:
+  repository: my-dotnet-api
+  tag: v1
+  pullPolicy: Never
+
+replicaCount: 1
+
+service:
+  port: 8080
+
+secret:
+  name: db-credentials
