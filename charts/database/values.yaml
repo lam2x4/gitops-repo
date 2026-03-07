@@ -1,0 +1,16 @@
+image:
+  repository: postgres
+  tag: 15-alpine
+  pullPolicy: IfNotPresent
+
+auth:
+  username: postgres
+  password: "123"
+  database: TodoApp
+
+persistence:
+  size: 1Gi
+  storageClass: standard
+
+service:
+  port: 5432
