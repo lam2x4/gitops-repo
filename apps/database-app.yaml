@@ -7,14 +7,14 @@ metadata:
     argocd.argoproj.io/sync-wave: "-1"
 spec:
   project: default
-  source:
+  source: # dinh nghia source of truth
     repoURL: https://github.com/lam2x4/gitops-repo.git
     targetRevision: main
-    path: charts/database
-  destination:
+    path: charts/database # duong dan den chart database
+  destination: # dinh nghia noi deploy
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: default # namespace de deploy database
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    automated: # tu dong sync khi co thay doi
+      prune: true # tu dong xoa resource khong con trong source
+      selfHeal: true # tu dong phuc hoi resource bi thay doi ngoai y muon
