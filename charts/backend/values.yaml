@@ -9,4 +9,4 @@ service:
   port: 8080
 
 secret:
-  name: db-credentials #Secret provider class
+  name: db-credentials
